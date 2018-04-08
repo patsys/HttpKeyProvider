@@ -54,8 +54,8 @@ namespace HttpKeyProvider
                 if (responseObject.formUrl != null)
                 {
                     Browser lBrowser = new Browser();
-                    lBrowser.webBrowser1.Url = new System.Uri(responseObject.formUrl);
                     lBrowser.Show();
+		    lBrowser.webBrowser1.Url = new System.Uri(responseObject.formUrl);
                 }
                 
             } while (responseObject == null || responseObject.key == null);
